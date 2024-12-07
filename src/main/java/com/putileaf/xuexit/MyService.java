@@ -1,28 +1,41 @@
 package com.putileaf.xuexit;
 
 import com.putileaf.xuexit.entity.Inbox;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
+import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+@Service
 public class MyService {
 
-    private final WebClient webClient;
+
+    
     private final String User_Cookie = "请填写自己的cookie";
 
-    public MyService(WebClient webClient) {
-        this.webClient = webClient;
-    }
+
+    WebClient webClient = WebClient.builder()
+            .baseUrl("https://office.chaoxing.com")
+            .build();
 
     public Mono<Inbox> getInbox() {
+
         MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
         formData.add("type", "2");
         formData.add("year", "2024");
         formData.add("queryFolderNoticePrevYear", "0");
-        return this.webClient.post()
+        return webClient.post()
                 .uri("/pc/notice/getNoticeList")
                 .header("Cookie", User_Cookie)
                 .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_FORM_URLENCODED_VALUE)
@@ -30,7 +43,7 @@ public class MyService {
                 .retrieve()
                 .bodyToMono(Inbox.class);
     }
-    public Mono<String> sendFormData() {
+    public Mono<String> sendFormData(String checkCode) {
         // 创建表单数据
         MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
         formData.add("formId", "819284");  // 添加表单字段
@@ -39,7 +52,7 @@ public class MyService {
         formData.add("t", "1");
         formData.add("enc", "e841476e440b01fb736891518a4186d0");
         formData.add("uuid", "1db440dc8d25494bac3dd14defcd47b8");
-        formData.add("checkCode", "bd30227106e74fbf9d826b711e175ea3");
+        formData.add("checkCode", checkCode);
         formData.add("submitVersion", "1724904540000");
 
         // 发送 POST 请求，Content-Type 为 application/x-www-form-urlencoded
@@ -50,5 +63,43 @@ public class MyService {
                 .bodyValue(formData)  // 将表单数据作为请求体发送
                 .retrieve()
                 .bodyToMono(String.class);
+    }
+
+    public Mono<String> getCheckCode() {
+        return this.webClient.get()
+                .uri("/front/web/apps/forms/fore/apply?id=819284&enc=e841476e440b01fb736891518a4186d0&fidEnc=b06cba4a51ac2253")
+                .header("Cookie", User_Cookie)
+                .header("Sec-ch-ua-mobile", "?0")
+                .header("Sec-ch-ua-platform", "\"Windows\"")
+                .exchangeToMono(response -> {
+                    if (response.statusCode().is3xxRedirection()) {
+                        URI locationUri = response.headers().asHttpHeaders().getLocation();
+                        try {
+                            String queryParams = new URI(locationUri.toString()).getQuery();
+                            Map<String, String> queryParamMap = parseQueryParams(queryParams);
+                            String checkCode = queryParamMap.get("checkCode");
+                            if (checkCode != null) {
+                                return Mono.just(checkCode);
+                            }
+                        } catch (URISyntaxException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    return Mono.empty();
+                });
+    }
+    private Map<String, String> parseQueryParams(String queryParams) {
+        Map<String, String> params = new HashMap<>();
+        if (queryParams != null) {
+            for (String param : queryParams.split("&")) {
+                String[] pair = param.split("=");
+                if (pair.length == 2) {
+                    String key = URLDecoder.decode(pair[0], StandardCharsets.UTF_8);
+                    String value = URLDecoder.decode(pair[1], StandardCharsets.UTF_8);
+                    params.put(key, value);
+                }
+            }
+        }
+        return params;
     }
 }
