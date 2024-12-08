@@ -20,3 +20,7 @@ package为jar包，在target目录下
 <br>
  0  50   9    *   *       ？   
  秒  分   时  每天 每月 不指定具体的星期几
+<br>
+
+克隆仓库
+git clone https://github.com/sh1SuTa/xueXiT.git
