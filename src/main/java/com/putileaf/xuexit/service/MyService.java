@@ -28,20 +28,20 @@ public class MyService {
             .baseUrl("https://office.chaoxing.com")
             .build();
 
-    public Mono<Inbox> getInbox(String User_Cookie) {
-
-        MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
-        formData.add("type", "2");
-        formData.add("year", "2024");
-        formData.add("queryFolderNoticePrevYear", "0");
-        return webClient.post()
-                .uri("/pc/notice/getNoticeList")
-                .header("Cookie", User_Cookie)
-                .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-                .bodyValue(formData)
-                .retrieve()
-                .bodyToMono(Inbox.class);
-    }
+//    public Mono<Inbox> getInbox(String User_Cookie) {
+//
+//        MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
+//        formData.add("type", "2");
+//        formData.add("year", "2024");
+//        formData.add("queryFolderNoticePrevYear", "0");
+//        return webClient.post()
+//                .uri("/pc/notice/getNoticeList")
+//                .header("Cookie", User_Cookie)
+//                .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+//                .bodyValue(formData)
+//                .retrieve()
+//                .bodyToMono(Inbox.class);
+//    }
     public Mono<String> sendFormData(String checkCode,String User_Cookie) {
         // 创建表单数据
         MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
@@ -77,6 +77,7 @@ public class MyService {
                     if (response.statusCode().is3xxRedirection()) {
                         URI locationUri = response.headers().asHttpHeaders().getLocation();
                         try {
+                            assert locationUri != null;
                             String queryParams = new URI(locationUri.toString()).getQuery();
                             Map<String, String> queryParamMap = parseQueryParams(queryParams);
                             String checkCode = queryParamMap.get("checkCode");
