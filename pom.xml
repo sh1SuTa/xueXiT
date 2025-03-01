@@ -10,7 +10,8 @@
     </parent>
     <groupId>com.putileaf</groupId>
     <artifactId>xueXiT</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1</version>
+<!--    <version>0.0.1-SNAPSHOT</version>-->
     <name>xueXiT</name>
     <description>xueXiT</description>
     <url/>
@@ -34,7 +35,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-json</artifactId>
         </dependency>
-
+<!--web请求依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>

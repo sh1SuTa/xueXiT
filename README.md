@@ -2,7 +2,7 @@
 中填写你的Cookie
 ![img.png](img.png) 
 
-如何获取Cookie，
+如何获取Cookie，https://i.chaoxing.com/
 打开浏览器F12登录即可
 ![img_1.png](img_1.png)
 

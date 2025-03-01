@@ -1,5 +1,9 @@
 spring:
   application.name:
-    xueXiT
+  jackson:
+    time-zone: Asia/Shanghai
+server:
+
+  port: 8082
 
 
