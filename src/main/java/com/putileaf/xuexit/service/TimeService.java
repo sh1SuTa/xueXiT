@@ -1,6 +1,5 @@
 package com.putileaf.xuexit.service;
 
-import com.putileaf.xuexit.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -9,24 +8,28 @@ import reactor.core.publisher.Mono;
 @Service
 public class TimeService {
     @Autowired private MyService myService;
-    //定时打卡，每天7：59
-    @Scheduled(cron = "0 59 7 * * ?")
-    public void timeTask(){
-        //汪
-        runYun("YourCookie");
-        //可以加多个
-        runYun("Cookie2");
+    //定时打卡，每天8：01
+    @Scheduled(cron = "0 01 8 * * ?",zone = "Asia/Shanghai")
+    public void time0801(){
+        runYun("Your_Cookie");
+        runYun("Your_Cookie2");
+    }
+    //定时打卡，每天8：30
+    @Scheduled(cron = "0 30 8 * * ?",zone = "Asia/Shanghai")
+    public void time0900(){
+        runYun("Your_Cookie");
+        runYun("Your_Cookie2");
 
     }
 
 
 
     public void runYun(String User_Cookie){
-        Mono<String> mono = myService.getCheckCode(User_Cookie);
-        String checkCode = mono.block();
+        Mono<String> checkMono = myService.getCheckCode(User_Cookie);
+        String checkCode = checkMono.block();
         System.out.println("checkCode值：" + checkCode);
-        Mono<String> mono1 = myService.sendFormData(checkCode,User_Cookie);
-        String result = mono1.block();
+        Mono<String> sendMono = myService.sendFormData(checkCode,User_Cookie);
+        String result = sendMono.block();
         System.out.println("result值：" + result);
     }
 
