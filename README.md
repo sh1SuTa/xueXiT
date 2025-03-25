@@ -1,6 +1,7 @@
 在 https://github.com/sh1SuTa/xueXiT/blob/ea3ebf0cfcf7fb6cefd0354144e86cf5f0555826/src/main/java/com/putileaf/xuexit/MyService.java
 中填写你的Cookie
-![img.png](img.png) 
+![img.png](img.png)
+此外，你需要抓取加密的表单数据提交
 
 如何获取Cookie，https://i.chaoxing.com/
 打开浏览器F12登录即可
