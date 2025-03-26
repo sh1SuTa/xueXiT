@@ -5,5 +5,6 @@ spring:
 server:
 
   port: 8082
-
+  jackson:
+    time-zone: GMT+8
 
