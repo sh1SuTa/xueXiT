@@ -54,14 +54,14 @@ public class MyService {
         formData.add("enc", "e841476e440b01fb736891518a4186d0");
 
 //        formData.add("uuid", "da7da7d069c749af9097fb67bc909f2f");//云
-        formData.add("uuid", "71738a58723d4dc087e30d409553e5fb");
+        formData.add("uuid", "4cac822f81fe42a6976b8c7810e5cb87");
 
         formData.add("checkCode", checkCode);
 
-        formData.add("submitVersion", "1739760175000");//相同
+        formData.add("submitVersion", "1744883382000");//相同
 
-        //formData.add("stateFid", "39037"); //云
-        formData.add("stateFid", "142415");
+        formData.add("stateFid", "39037"); //云
+//        formData.add("stateFid", "142415");
 
         // 发送 POST 请求，Content-Type 为 application/x-www-form-urlencoded
         return this.webClient.post()
