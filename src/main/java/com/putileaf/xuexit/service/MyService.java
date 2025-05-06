@@ -1,6 +1,5 @@
 package com.putileaf.xuexit.service;
 
-import com.putileaf.xuexit.entity.Inbox;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
@@ -47,21 +46,20 @@ public class MyService {
         MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
         formData.add("formId", "819284");  // 添加表单字段
         formData.add("version", "1");
-        //formData.add("formIdValueData", "{\"63\":{\"compt\":\"editinput\",\"groupValues\":[{\"values\":[[]],\"isShow\":false}],\"inDetailGroupIndex\":-1,\"id\":63,\"fromDetail\":false,\"hasAuthority\":true},\"74\":{\"compt\":\"radiobutton\",\"groupValues\":[{\"values\":[[{\"val\":\"健康\",\"isOther\":false,\"color\":\"#2DBE62\",\"score\":\"\"}]],\"isShow\":true}],\"inDetailGroupIndex\":-1,\"id\":74,\"fromDetail\":false,\"hasAuthority\":true},\"75\":{\"compt\":\"location\",\"groupValues\":[{\"values\":[[{\"lat\":31.130105004243,\"lng\":106.65690751858,\"address\":\"武汉晴川大学\"}]],\"isShow\":true}],\"inDetailGroupIndex\":-1,\"id\":75,\"fromDetail\":false,\"hasAuthority\":true}}");
+//        formData.add("formIdValueData", "{\"63\":{\"compt\":\"editinput\",\"groupValues\":[{\"values\":[[]],\"isShow\":false}],\"inDetailGroupIndex\":-1,\"id\":63,\"fromDetail\":false,\"hasAuthority\":true},\"74\":{\"compt\":\"radiobutton\",\"groupValues\":[{\"values\":[[{\"val\":\"健康\",\"isOther\":false,\"color\":\"#2DBE62\",\"score\":\"\"}]],\"isShow\":true}],\"inDetailGroupIndex\":-1,\"id\":74,\"fromDetail\":false,\"hasAuthority\":true},\"75\":{\"compt\":\"location\",\"groupValues\":[{\"values\":[[{\"lat\":31.130105004243,\"lng\":106.65690751858,\"address\":\"武汉晴川大学\"}]],\"isShow\":true}],\"inDetailGroupIndex\":-1,\"id\":75,\"fromDetail\":false,\"hasAuthority\":true}}");
         formData.add("formIdValueData",formIdValueData);
         formData.add("t", "1");
 
         formData.add("enc", "e841476e440b01fb736891518a4186d0");
 
-//        formData.add("uuid", "da7da7d069c749af9097fb67bc909f2f");//云
-        formData.add("uuid", "71738a58723d4dc087e30d409553e5fb");
+        formData.add("uuid", "4cac822f81fe42a6976b8c7810e5cb87");
 
         formData.add("checkCode", checkCode);
 
-        formData.add("submitVersion", "1739760175000");//相同
+        formData.add("submitVersion", "1744883382000");//相同
 
-        //formData.add("stateFid", "39037"); //云
-        formData.add("stateFid", "142415");
+
+        formData.add("stateFid", "39037");
 
         // 发送 POST 请求，Content-Type 为 application/x-www-form-urlencoded
         return this.webClient.post()
@@ -93,7 +91,8 @@ public class MyService {
                                 return Mono.just(checkCode);
                             }
                         } catch (URISyntaxException e) {
-                            e.printStackTrace();
+
+                            System.err.printf("getCheck发生错误："+e);
                         }
                     }
                     return Mono.empty();
