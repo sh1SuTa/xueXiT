@@ -33,7 +33,7 @@ public class TimeService {
 
     }
 
-    //定时打卡，每天9：30
+    //定时打卡，每天9：00
     @Scheduled(cron = "0 00 9 * * ?",zone = "Asia/Shanghai")
     public void time0900(){
         //he
@@ -65,9 +65,15 @@ public class TimeService {
         Mono<String> checkMono = myService.getCheckCode(User_Cookie);
         String checkCode = checkMono.block();
         System.out.println("checkCode值：" + checkCode);
-        Mono<String> sendMono = myService.sendFormData(checkCode,User_Cookie,formIdValueData);
+        Mono<String> sendMono = myService.sendFormDataAndFormIdValueData(checkCode,User_Cookie,formIdValueData);
+        Mono<String> sendMono1 = myService.sendFormDataNoFormIdValueData(checkCode,User_Cookie);
+
         String result = sendMono.block();
-        System.out.println("result值：" + result);
+        String result1 = sendMono1.block();
+        System.out.println("加密formIdValueData值：" + result);
+        System.out.println("无加密值：" + result1);
+
     }
+
 
 }
