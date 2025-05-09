@@ -27,20 +27,22 @@ public class MyService {
             .baseUrl("https://office.chaoxing.com")
             .build();
 
-//    public Mono<Inbox> getInbox(String User_Cookie) {
-//
-//        MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
-//        formData.add("type", "2");
-//        formData.add("year", "2024");
-//        formData.add("queryFolderNoticePrevYear", "0");
-//        return webClient.post()
-//                .uri("/pc/notice/getNoticeList")
-//                .header("Cookie", User_Cookie)
-//                .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-//                .bodyValue(formData)
-//                .retrieve()
-//                .bodyToMono(Inbox.class);
-//    }
+/*
+    public Mono<Inbox> getInbox(String User_Cookie) {
+
+        MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
+        formData.add("type", "2");
+        formData.add("year", "2024");
+        formData.add("queryFolderNoticePrevYear", "0");
+        return webClient.post()
+                .uri("/pc/notice/getNoticeList")
+                .header("Cookie", User_Cookie)
+                .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+                .bodyValue(formData)
+                .retrieve()
+                .bodyToMono(Inbox.class);
+    }
+*/
 
     //有formIdValueData请求
     public Mono<String> sendFormDataAndFormIdValueData(String checkCode,String User_Cookie,String formIdValueData) {
