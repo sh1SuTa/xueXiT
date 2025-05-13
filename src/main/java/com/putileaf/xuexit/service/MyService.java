@@ -82,7 +82,7 @@ public class MyService {
         MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
         formData.add("formId", "819284");  // 添加表单字段
         formData.add("version", "1");
-        formData.add("formIdValueData", "{\"63\":{\"compt\":\"editinput\",\"groupValues\":[{\"values\":[[]],\"isShow\":false}],\"inDetailGroupIndex\":-1,\"id\":63,\"fromDetail\":false,\"hasAuthority\":true},\"74\":{\"compt\":\"radiobutton\",\"groupValues\":[{\"values\":[[{\"val\":\"健康\",\"isOther\":false,\"color\":\"#2DBE62\",\"score\":\"\"}]],\"isShow\":true}],\"inDetailGroupIndex\":-1,\"id\":74,\"fromDetail\":false,\"hasAuthority\":true},\"75\":{\"compt\":\"location\",\"groupValues\":[{\"values\":[[{\"lat\":31.130105004243,\"lng\":106.65690751858,\"address\":\"武汉晴川大学\"}]],\"isShow\":true}],\"inDetailGroupIndex\":-1,\"id\":75,\"fromDetail\":false,\"hasAuthority\":true}}");
+        formData.add("formIdValueData", "{\"63\":{\"compt\":\"editinput\",\"groupValues\":[{\"values\":[[]],\"isShow\":false}],\"inDetailGroupIndex\":-1,\"id\":63,\"fromDetail\":false,\"hasAuthority\":true},\"74\":{\"compt\":\"radiobutton\",\"groupValues\":[{\"values\":[[{\"val\":\"健康\",\"isOther\":false,\"color\":\"#2DBE62\",\"score\":\"\"}]],\"isShow\":true}],\"inDetailGroupIndex\":-1,\"id\":74,\"fromDetail\":false,\"hasAuthority\":true},\"75\":{\"compt\":\"location\",\"groupValues\":[{\"values\":[[{\"lat\":31.130105004243,\"lng\":106.65690751858,\"address\":\"湖北省武汉市东湖新技术开发区中华科技产业园玉屏大道9号武汉晴川学院\"}]],\"isShow\":true}],\"inDetailGroupIndex\":-1,\"id\":75,\"fromDetail\":false,\"hasAuthority\":true}}");
 
         formData.add("t", "1");
 

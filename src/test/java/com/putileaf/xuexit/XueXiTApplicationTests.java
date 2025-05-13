@@ -10,7 +10,7 @@ class XueXiTApplicationTests {
     @Autowired private TimeService timeService;
     @Test
     void contextLoads() {
-        timeService.time0900();
+        timeService.testService();
 
     }
 
