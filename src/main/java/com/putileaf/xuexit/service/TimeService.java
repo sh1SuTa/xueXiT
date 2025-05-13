@@ -22,20 +22,11 @@ public class TimeService {
     @Scheduled(cron = "0 01 8 * * ?",zone = "Asia/Shanghai")
     public void time0801(){
 
-
-
             // 执行你的业务逻辑
         //he
         runYun("fid=142415; _uid=236487332; uf=b2d2c93beefa90dcf24ea5556efca4e7e12a4a0721f84caa2985faf6bbbcd1b2500856e34427f8f6dee864c18913fb9c03bd6be8a155baf617a3131c5323ef26de6d0eb927bce2d3f8ac0bf266a53391dfd4860a93fcbeea984625cf74d71116dede8b1ac316fba8e7fafd565af53bf2; _d=1741406717169; UID=236487332; vc2=7EEBA7C9DAA72A4AC4C34269584BAA56; vc3=SDDXo3Tt9SCP%2BlBKAQ463cJXt1kBk8bS646H2wvrtnk89T1%2B6AYVO27s0KKa3kLZpkH1BDh2%2BkkO7i%2FnoODwc1%2BosTWOVD5JN1G56tMMobiKZvkE95DksQWcU7iRW3%2BeivkZDEm6QkgpKrIhN2jmfz98xOwCIR0Hi79csOLbroU%3D255a24198972c2c6abe360cb0158cefd; cx_p_token=00fda92f756f1a46152f0f47c25b04a2; p_auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIyMzY0ODczMzIiLCJsb2dpblRpbWUiOjE3NDE0MDY3MTcxNzEsImV4cCI6MTc0MjAxMTUxN30.eYuS9YQYBtUj8Y44FPY1P9E_E73xLZ7pdOTNcxGjBEo; xxtenc=a4f0c18daec8a84b3b5231cfa3bfee9a; DSSTASH_LOG=C_38-UN_3626-US_236487332-T_1741406717171; spaceFid=142415; oa_uid=236487332; oa_name=%E8%B4%BA%E5%BC%80%E6%A6%9C; session_oa=ODlhMzE5ODYtMTRhMi00MGM5LTllYmItZjk3NTNmODFkMDI0; route=24b68763a0e084beec86cc31ab344491; oa_deptid=39037; oa_enc=76f9cca31f8066270871262a154654a0",
             "s6dlD0SYG79D1ZkYHGxvbfB9xCK7BhxO0HF7TQjR9c1dx7oCB9kXECwVxOgVDe6cw28iiDmVjQP/gljbuYBpv0LL00xxUUOCD5jEUzx5td8qdvaMGgYocrmUulANtOpb0wdxzj+YCm3lriyXYyAXcudQmDqzAyUbA4nSX759h+kfar00eT8viEY38pdGd7aRyP6KjuXR0QpYVrMp35xjmG7+Bs/zPrGiVoWKe3rlJSuLRGiJcNXyPyAeO0f0zZdWPCv4VmZuXcbeOWooWtW2OtdCeQ6uyLlufa+/1wgxGizOfUk48S22bufYOXfuKAyWBsjSnAAVKc3Lvott0A+8IQskFOxc5rmBwAXTDqFKRh3nl/nuSq6B0hrf38Mgdenp24QUHwfVTsoHOsbUDW4RNvs//oK+/aBulodsixbYgYxsgB2VXMLed8VxpTE3cFh/tScBwSDgqpSyTuiosOPKZERIn4DqaFS9bfjTmI6dIjf3MCxL6BxM2sTIZuFImFICdbu6KKz8CI7nFKaVC5ToBXImdajzkADyrS3HgqOnD+RDggyTQApXTI1gM3gy6rlJ9yFivfIwtPvo4a3kQLCcdpEkEt3wdClO3/EVpTUlbnASjqDHBjKZYxpao/xsz0YbOv7myQ9CYYws81nkZ8gg2xmAX7+pymQwFAJW5p5iurdJxIDQdGhWcMH2ujgu3BYRaTTQelYXeI9VN9FCQc0k/p3uiecaxZ5UsdTAXvBt6BZiwrXCUWyhMJPSAm43pbB7S4rdyW9hyU8wqh64sPhLkCkP6CebYusslkbLZvzJUkrZjqXNYNtlvAMAots5WrJPrbqEm3GL5IK3RwaCRuDmqMsJC6Mx+ap4F5USk7eGCmYwNnhL0Y8wkq+a4TCA+kp0Df0D8SVd43shYgvvraoy7XvUhe0ecfZRiIFM1EzJhivK9/Yd+70E+du1nlawtRgwqXHTkkH6WR8dfxCiwbuealsMjfwGLx0V1J3BHG8KaBQdrvWcluKaE6/Q6IaaHtR9n1Heu7Iz6rIO9STgS2H667kRqcI4pwHgELQvjVjEWvUyRxHo3uZwOkGDze7xCTvRu8yvNvtzv3hBmK6XthsxJpzk0585mTRgEfA24qnh/5kp11cxT5yhXCjeCRbZidRVlTCbn9wJpdNI4ig0O3xQ+D0JaAZl0293iYlR6/Yv7TD9oRzreQvDpwg0ab1K72k8PiTouKOjuD428znLpcjhRPKzkn1Ac0x4+QIWz47Zn0nfTceidE1yk8j44x+MAaTKv1+NL3xcXWWv0Q6w+m5kSNUEvoyHoceWlP/Bf2uAh6hmQ+guSe8+xwaACITCtghjMkcR6N7mcDpBg83u8Qk70bkc0LPtGtOSxg2pyXFJhpZPax2iYW2MAvF9PD+QFmIS5LIFKA6KHnYUUqjFI4w1SQrFwgq8zcMzV8ESPvTSogU2nc2nzbG9pIaHH7Oa4+jGCpup3zOhsRBsQh+u2sXvYJ9qqzWfog5g2p1y6apSj6pfZ+p9PcBbNsNUVQdFh9S2mS7n03CmGcAUb8naQzVAP25xhgSYb+5gsgT3qy6tCMo4AtWjSKIYJY/pz5IHQFbwNFIpyAfTAbl9yeJRV0hjEQ==");
 
-
-
-
-
-        //wu
-//        runYun("tl=1; _uid=208422914; _d=1742949690149; UID=208422914; vc3=ScIPcaDIMjpMnkrFgRau3ClFLkxm7ndZfQmX6ddJuzU8h6iNbguYnjej5GB1Bn9E%2FPfIJg%2FrF6MWC3%2FNTxxlnvz5c9kHvHNaKXQ9IHoLoT4rEFd4jO3QW3AaSa%2F272mnzUFA2m8Nm6vRme6akPXKkIluc1w%2Fq7%2Bpu6Il4WjNs08%3Dfffb0d5be7afbde2d43aa5b036d82f2e; uf=94ffe74515793f36d488096901cdbd63cb80f1bceb5d72e09c94eb71f57af0534c59635eb4846473648327fa1af564ccd110c105546a283dab5213149d75dadbffcc3e0ecaa21d4f49b4dcd5ab715faafd8d1b9f89f0c1c6a2caeba8547d183abb17bf80e4ba9ed3260b22ede7461b6b9925dacce67289eb2bcac27a479e1c2464d89dae0906d90e; cx_p_token=9019ea118f6d9c3cb67eeb58127e85d2; p_auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIyMDg0MjI5MTQiLCJsb2dpblRpbWUiOjE3NDI5NDk2OTAxNTAsImV4cCI6MTc0MzU1NDQ5MH0.3br5d0e5cgpJhB1Kbr_tGDcp8cohB5X8r54sSjqPBOE; xxtenc=d67ee4da6ca96e833f5c92dd2c65fdb3; DSSTASH_LOG=C_38-UN_3626-US_208422914-T_1742949690150; wfwfid=31955; fid=31955; source=num2; workRoleBenchId=0; siteType=2; wfwEnc=0B95FEEB0BE267CB22465B2B1B8DC612; styleId=; spaceFid=31955; spaceRoleId=\"\"; session_oa=YTIzNGFiZWUtODM3ZS00MzQ3LTgzZDAtNWFhMTJhZDE3YzM2; route=979f90989291bbaabf5efe25a3f2db16; oa_deptid=39037; oa_uid=208422914; oa_name=%E5%90%B4%E5%AE%87%E6%99%97; oa_enc=0de5920c3589e06b70420954cbd97ee7",
-//                "/3U5jeVAmd61wpfiRQnSkmjn1IU2KptKyef0svlt316y0iXVPRHwV99X+qly+TGr1bUUnQVyDcIomjFYCdJH+15wAiekHIswaFaUVme2HFBvwtH+mHHQEthMryuvp9DjyQ/so/rn/Qx6Ak5OaVNfZS3SR1sXvfm6TGz6wHoR7buFfOgo2YjxZfCTfQlaMTV3Ix9Sv3fn6hi4clj0VYmPFBZ6cZxOdLaGTrvj3ercXvOAk/FuTebMPY9oFknCXUgjKltN3a1wosafwpqFJ4Fouu1eZ8cw3HYJL+I4s6KsfoPehlIpTGeWckUXpUQcePJMEehrmPe3ac01EwyjTmyX2mjHntuk5oJeBTp8IbCQm7DDDdgwPmrFiY2OKIEF/GqvAt87+ynhHFXq9TISRom72ZrKINQEbg3hlU3mhnsbguKVj3n9SI9TQz2BH6wB9ttYD7HrE9DcZpepNKWMHb5fFTECGge3ICNZu904OnqexfUcnLPj7iKLS1yvNee9y/KKmFa4ZbBAz218MVzE9H/fwmsGl4jKWTAiXjLCpYAlJPIx/zGpdN96qQxjq3zz7LHyxOoeJOY6asgt0z3+lzP0UXgPuMUB9ss8NxeiKQdPGQ/PzftXCIKXBohB9MazeBJRdtP/MPze/i2Y96WJ7hU1kHeDhz3VN0za08L3K5s8tochXUIEKrpaahNl7h8oBIL0cKyS5nBbAwgQsdwBacaTukrxyp9zQQRLF0ROCz/xdgbaGxhzTd+4SIw9qrNBGeWE5qx7Z4aoUqXB+KQB/ViOqww7Vx5RTOL/uWHS3rUe61/yNN+7WC1BRktUVEuTJyX8hk0+AlF96NcIWf6wT9SfT91e8dssRh2pRSm4tmvcoAix1rd0lUDRJ7ZLSuizTVcrDxBtHH2hSqI/G7N/lumUvxqrLJhsVMRGuTLWFRDgNS8bVLamEfltqOvVnr74Dkha2o6/uRJJzmnC6svsTI/ea/jCaYXTcMPyw3K45tCIr/JrTOTk8X4kSNFeEpcPm9IBd62eRaetRCa9gs+/H2OTexVOV9GY5BuNVSs2R45yqRBAcqio15txNVuKehLCphPBYStgG2YWaTErz1Y80FyhCfDAFKm6A4PHFpZ/12rLQM35QyjC0+g8z9YecfHJ+NdlfpEoMVzpQCIN5QZLtkWP6neTPdRW/m6d9uLL2pqsjsnSMiJVgGQ/re9F/Whu/hNLDeYrVnJwxBRjXXU2Uf1qEBMqbiHrf0EE7aDPn4glqO28aA8ftRUT6tDMrPupFRKhKnQJGh7uWlRiYUo5wvZCallqRktSLwv6M7S9/p1cMPX/TMczTuBjDkPLU/VuBcFOkkYp7v1otiD942kpKbHOwN5oNPbqogYe+dGMP9g2FBajfQkhmHaBJNRAoclahZPVCTpSL8IrWSQ2muIsv7c8/SAP1exEHaVrztS7JoIQh4sr8CWvAExPEpYoplvqKbTd8LKbsKkLWr3N/eNbQwJAZxT5BaFoKxrtDZUv6L3geNk=");
 
     }
     //w
@@ -43,7 +34,7 @@ public class TimeService {
     public void timeW(){
         // 生成一个随机延迟时间，比如 0~3600 秒（0~1 小时）
         int randomDelayInSeconds = new Random().nextInt(3600);
-
+        System.out.println("W随机延迟：" + randomDelayInSeconds + "秒");
         try {
             Thread.sleep(randomDelayInSeconds * 1000L);
         } catch (InterruptedException e) {
@@ -59,7 +50,7 @@ public class TimeService {
     public void timeY(){
         // 生成一个随机延迟时间，比如 0~3600 秒（0~1 小时）
         int randomDelayInSeconds = new Random().nextInt(3600);
-
+        System.out.println("Y随机延迟：" + randomDelayInSeconds + "秒");
         try {
             Thread.sleep(randomDelayInSeconds * 1000L);
         } catch (InterruptedException e) {
@@ -76,7 +67,7 @@ public class TimeService {
     public void timeZ(){
         // 生成一个随机延迟时间，比如 0~3600 秒（0~1 小时）
         int randomDelayInSeconds = new Random().nextInt(3500);
-
+        System.out.println("Z随机延迟：" + randomDelayInSeconds + "秒");
         try {
             Thread.sleep(randomDelayInSeconds * 1000L);
         } catch (InterruptedException e) {
@@ -86,6 +77,23 @@ public class TimeService {
         //z
         runYun("fid=39037;  _uid=203377794; uf=94ffe74515793f36d488096901cdbd6344cb1d925d1ca306fb61016f532c9ae6bbe0fa7ed8727a6da3fcf73d8a635bcf30d92481d752d66f88b83130e7eb470447967f06c3529f39c04fd8193a78cec6260b22ede7461b6b14d1a086dbd9b2afbe50cd88bd85609daa2ebad65cd196bb; _d=1741487781084; UID=203377794; vc2=BA55DA0AC1E1C007EF7FA1C230A5DB43; vc3=BKM8HZkfL%2FCAkuiZ2VQQhcEw5bAs7N2qUjhui7ojkezx0uLNbrhmCMpm%2BltyMNXWCZL04bjW0F1ECMvdKiOjVOv3t2r%2BmlJ4dqIBHgHImJwCgbFxEll%2FvccUTtTTGwh7JxNHGkOIoWe%2B0VGLk%2B18h4%2BunHjGWTolNkbtvhcu4pI%3Dfa390b36006412e3397e2df8d98958d1; cx_p_token=12ee609720ca6c8c026cc797cd1a1045; p_auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIyMDMzNzc3OTQiLCJsb2dpblRpbWUiOjE3NDE0ODc3ODEwODUsImV4cCI6MTc0MjA5MjU4MX0.qGD38trzY9ZS8xPpisOd3dDe2jXElEx2BNGwOgj_9_M; xxtenc=a42aac1c8134a0f246d017b54b133c68; DSSTASH_LOG=C_38-UN_3626-US_203377794-T_1741487781086; spaceFid=39037; spaceRoleId=3; session_oa=MGUwOGVhMjQtZTM2My00NjQ3LWE4OGUtYzk5NWE5ZTkzYjE1; route=6b5f9c5cf712c012a60281ee235d6b97; oa_deptid=39037; oa_uid=203377794; oa_name=%E6%9B%BE%E7%86%A0%E6%99%A8; oa_enc=223901a8ad8fa7a2037e9168fc20df8d",
                 "5RR+K0riF6737+HsLfvTMSMOsK0dGADPETYiiskDkBPvSB2gOZzp47Gqk/n+aufRf8YPz38pXeWrFW3eUfl1bFYN1jICp6n+EHdEA62mM761+MZc34eyTtW2vtPBZMoxGPvCVjXixcBZE/sEKUEKoujApKxCtoBfSE6nZ2DDnsH4Uyff9v/bmLp+JHu2gmGN3RriFQnk7nDqGVsE+11QK0/OuFIAP/g99mhdo5LTx/juOxk7ZT8i+4KyLIsI632mPdfW1OpCHSeMVvGKXd+lyJQtwCLtLBf3/kQCG0Or0FhXsJvKNS8a0iU652gNoHphtSn+lmVPgu+Kn2UJ/yZXVZCc7SsXccNw3yWQLfYtKEUXfusutyyGdV9XSTwjXBv7IhZARs0dq2YXwPpFfICJrQe9aU46E5lYbvKJEtz2CCtyf2P7RITauwk/2yNRG5wxkYLiG8e/2lN7fdzy0BNjeDAXHH+1YTN/HOCKV2vHQzifh40BJhDnHezowk7nFAWeQWakgnpF9E3e85cxIDSHUgTQH1B0f0xHRuCG7T2yrr4Y6y9amFDM3NVe4vSKubg/60plD5lzJGa82QLLtXTAi2ioGPcuL+8d4xpw/uSoxowxyVnIoLO2g8rX917PAKpf1jJO4YIw7r218BUeiQ9vc0rfsvBaxx01MJyKQ2QE2jqMpdl7KcjAGGkpIBrhh0tvmYqnlGRKTlZEfxEwTOatyjA1aCC3KVvRXyAGULM369TyHnT7oJJ8ixub5kej7gsU6C/UK8gpvGyX3WDID3NFrzNxFtxaaJGsuH/HOzAOLpodux4UPipsFHRyhYnCCOSa3621rDWCJgAICHq6VIHksxrae+MdIx1wPmXKw3/pJfrohGTNJOcS+6D6lm0JcWShLjkAecGwLwP3nnvAEh754SifU/SzJDDj6hTswKXMX+qwqH0e8BvDe7xQraNQuQlyInF53XINak4Ts0unztQv9aX3AUT+qBiXpxkO9qJoP+O79D8/P8qVQABtbmiBcZD22PbmlMCXAqawdsgmQGKwFoZdJnKmQG+iiNrqg/ZFEQvPMVqc4JAbvTEOGcZdmj9Miq3i9y7iHDuYwdduh9oTbpkNRWmROOhq7FIalMyyRQp/GdGy2butLhMWLTSXWmqkosxGSyQwgDVplefOD5VgeG078FkOISGrDJIy6/b3R4j84mWuFkLY39CS+zSZB7TwMzO4G+iMgAXIj/y4AOQhwkJjcrmInAgmdoXt1nVSetMPzhTvEJExJaNIuRDSxc4w02o3HW/tYi6Lr0veWgq3po5waSgZ+ujLHghOka/XYaZnrrcHUcgmzkWBmGueChed");
+
+    }
+    //Wu
+    @Scheduled(cron = "0 01 8 * * ?",zone = "Asia/Shanghai")
+    public void timeWu(){
+        // 生成一个随机延迟时间，比如 0~3600 秒（0~1 小时）
+        int randomDelayInSeconds = new Random().nextInt(3500);
+        System.out.println("Wu随机延迟：" + randomDelayInSeconds + "秒");
+        try {
+            Thread.sleep(randomDelayInSeconds * 1000L);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+
+        //wu
+        runYun("tl=1; _uid=208422914; _d=1742949690149; UID=208422914; vc3=ScIPcaDIMjpMnkrFgRau3ClFLkxm7ndZfQmX6ddJuzU8h6iNbguYnjej5GB1Bn9E%2FPfIJg%2FrF6MWC3%2FNTxxlnvz5c9kHvHNaKXQ9IHoLoT4rEFd4jO3QW3AaSa%2F272mnzUFA2m8Nm6vRme6akPXKkIluc1w%2Fq7%2Bpu6Il4WjNs08%3Dfffb0d5be7afbde2d43aa5b036d82f2e; uf=94ffe74515793f36d488096901cdbd63cb80f1bceb5d72e09c94eb71f57af0534c59635eb4846473648327fa1af564ccd110c105546a283dab5213149d75dadbffcc3e0ecaa21d4f49b4dcd5ab715faafd8d1b9f89f0c1c6a2caeba8547d183abb17bf80e4ba9ed3260b22ede7461b6b9925dacce67289eb2bcac27a479e1c2464d89dae0906d90e; cx_p_token=9019ea118f6d9c3cb67eeb58127e85d2; p_auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIyMDg0MjI5MTQiLCJsb2dpblRpbWUiOjE3NDI5NDk2OTAxNTAsImV4cCI6MTc0MzU1NDQ5MH0.3br5d0e5cgpJhB1Kbr_tGDcp8cohB5X8r54sSjqPBOE; xxtenc=d67ee4da6ca96e833f5c92dd2c65fdb3; DSSTASH_LOG=C_38-UN_3626-US_208422914-T_1742949690150; wfwfid=31955; fid=31955; source=num2; workRoleBenchId=0; siteType=2; wfwEnc=0B95FEEB0BE267CB22465B2B1B8DC612; styleId=; spaceFid=31955; spaceRoleId=\"\"; session_oa=YTIzNGFiZWUtODM3ZS00MzQ3LTgzZDAtNWFhMTJhZDE3YzM2; route=979f90989291bbaabf5efe25a3f2db16; oa_deptid=39037; oa_uid=208422914; oa_name=%E5%90%B4%E5%AE%87%E6%99%97; oa_enc=0de5920c3589e06b70420954cbd97ee7",
+                "/3U5jeVAmd61wpfiRQnSkmjn1IU2KptKyef0svlt316y0iXVPRHwV99X+qly+TGr1bUUnQVyDcIomjFYCdJH+15wAiekHIswaFaUVme2HFBvwtH+mHHQEthMryuvp9DjyQ/so/rn/Qx6Ak5OaVNfZS3SR1sXvfm6TGz6wHoR7buFfOgo2YjxZfCTfQlaMTV3Ix9Sv3fn6hi4clj0VYmPFBZ6cZxOdLaGTrvj3ercXvOAk/FuTebMPY9oFknCXUgjKltN3a1wosafwpqFJ4Fouu1eZ8cw3HYJL+I4s6KsfoPehlIpTGeWckUXpUQcePJMEehrmPe3ac01EwyjTmyX2mjHntuk5oJeBTp8IbCQm7DDDdgwPmrFiY2OKIEF/GqvAt87+ynhHFXq9TISRom72ZrKINQEbg3hlU3mhnsbguKVj3n9SI9TQz2BH6wB9ttYD7HrE9DcZpepNKWMHb5fFTECGge3ICNZu904OnqexfUcnLPj7iKLS1yvNee9y/KKmFa4ZbBAz218MVzE9H/fwmsGl4jKWTAiXjLCpYAlJPIx/zGpdN96qQxjq3zz7LHyxOoeJOY6asgt0z3+lzP0UXgPuMUB9ss8NxeiKQdPGQ/PzftXCIKXBohB9MazeBJRdtP/MPze/i2Y96WJ7hU1kHeDhz3VN0za08L3K5s8tochXUIEKrpaahNl7h8oBIL0cKyS5nBbAwgQsdwBacaTukrxyp9zQQRLF0ROCz/xdgbaGxhzTd+4SIw9qrNBGeWE5qx7Z4aoUqXB+KQB/ViOqww7Vx5RTOL/uWHS3rUe61/yNN+7WC1BRktUVEuTJyX8hk0+AlF96NcIWf6wT9SfT91e8dssRh2pRSm4tmvcoAix1rd0lUDRJ7ZLSuizTVcrDxBtHH2hSqI/G7N/lumUvxqrLJhsVMRGuTLWFRDgNS8bVLamEfltqOvVnr74Dkha2o6/uRJJzmnC6svsTI/ea/jCaYXTcMPyw3K45tCIr/JrTOTk8X4kSNFeEpcPm9IBd62eRaetRCa9gs+/H2OTexVOV9GY5BuNVSs2R45yqRBAcqio15txNVuKehLCphPBYStgG2YWaTErz1Y80FyhCfDAFKm6A4PHFpZ/12rLQM35QyjC0+g8z9YecfHJ+NdlfpEoMVzpQCIN5QZLtkWP6neTPdRW/m6d9uLL2pqsjsnSMiJVgGQ/re9F/Whu/hNLDeYrVnJwxBRjXXU2Uf1qEBMqbiHrf0EE7aDPn4glqO28aA8ftRUT6tDMrPupFRKhKnQJGh7uWlRiYUo5wvZCallqRktSLwv6M7S9/p1cMPX/TMczTuBjDkPLU/VuBcFOkkYp7v1otiD942kpKbHOwN5oNPbqogYe+dGMP9g2FBajfQkhmHaBJNRAoclahZPVCTpSL8IrWSQ2muIsv7c8/SAP1exEHaVrztS7JoIQh4sr8CWvAExPEpYoplvqKbTd8LKbsKkLWr3N/eNbQwJAZxT5BaFoKxrtDZUv6L3geNk=");
 
     }
 
