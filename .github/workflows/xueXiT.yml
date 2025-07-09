@@ -1,10 +1,12 @@
-on: push
+on:
+  schedule:
+    - cron: '0 8 * * *'
 jobs:
-  job1:
+  run-jar-job:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
-      - run: ls
+      - run: java -jar target/xueXiT-1.jar
+
   job2:
     runs-on: windows-latest
     steps:

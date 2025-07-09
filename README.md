@@ -25,3 +25,8 @@ package为jar包，在target目录下
 
 克隆仓库
 git clone https://github.com/sh1SuTa/xueXiT.git
+
+值得一提的是：
+![img_5.png](img_5.png)
+武软的fid是31027，而武汉晴川学院的是39037
+其他学校不知道，欢迎补充
