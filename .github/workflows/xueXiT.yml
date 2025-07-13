@@ -5,7 +5,7 @@ jobs:
   run-jar-job:
     runs-on: ubuntu-latest
     steps:
-      - run: java -jar target/xueXiT-1.jar
+      - run: ls -l /
 
   job2:
     runs-on: windows-latest
