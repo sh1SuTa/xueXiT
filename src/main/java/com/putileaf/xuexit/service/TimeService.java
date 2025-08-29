@@ -12,9 +12,13 @@ public class TimeService {
     @Autowired private MyService myService;
 
     public void testService(){
-        //w
+        //wjt
         runYun("fid=39037;  UID=243384068;_d=1741188242116; vc3=YHV13VzjTe2akYiVEUI8KB55TPus7k2g%2BMDJXJON29%2FAQd6%2BTaFYlJby%2FsIlkDlNo6MV47jv4n0owUKGkRM7GA4EwcTXXpIzXBZk%2FdSl5%2BnMr%2BoZRiCvAdTqn0iHJsUWR9IhTpX5EFX6ULqzCAywAxjeUfyzZnLIOvBEUvie4Jc%3Dea8340ab09bcfb805846361f5250838f; session_oa=ZDczYWNkNzQtZmJiMC00YTVhLWE5NTItZGFlMWU5YTVhZWUw;",
-                "q77eHvCwFfHfNcKsOWxkvkBKxYm2h2mCbQVKSuz9JKOxCjBunLhdr1OwOOVdLHj6THMnc/Fu/T9KWOgHsHxSBbN3EoegWO/gsRy0tdat6V5Y5exzHpEkZdHyrbJ/MRGi2I0cr21JutlOhcD2JkdAZmjsorNyF53DyrCo6knKcp/z4wqiI5vnwG/LPzszwew95cdzGP2iLyMfOpq/MhHfERtZm+f6GBAvHy+x0Tll9OwqVX3BJ2UTjHRSGg9vW9m7fped4d/KSjQ8ByDAsxtPx4N6+Qk5Tt0iX3xCv4qDI4OWFHBslJoYA3CjhK6Vycb6vDb4DpHgHrQdoWV2vh+gIqAaWTZNVMYm0YP9+ZlBlJsdAjCWV7D6RZbogQoucFZ3ib9YUYkwRdK05SOCjV9cdVqddW0m8JJ5IEXi5hJdoAMh9h6eS4lRQCfyQD0gwpS7/JEvferLm4R9cx7Xd6GuSbQk6d0Exz/oVCDTLf7SILegzMiOrV7DeKyCRSR749hUabvLHfQoL94wHIibu05KyqWPBiuO9Y7TH3R8BK6Ylxdyu6HEtARkmJfFnKwCL4db97y0HrGhROjDRmScj+XkqGPZrCRjSOLJtjPY1WEKihnMp1rnZimOjPXZLIBlwUsI67QMW5c7p2Z8FG6TvtZU7kWLfjgBxuS4SaC7D5i5UzGivds8fP+7ZR0p/+rX7cySphZ+1cPhWJjluF6PxK7XOObcMe2rGSk33pdljVE7mOpT/XE8pcDNz/wotqWhTwOyNmSb3ZykxIvGcZYXGAFI6cKwcBQkst4ECah0ZKAmVlqphPrIimGz54xiCVdmClrBdr94QFbrQbELwAOLnaHgs7PAFh4U6nOZqOMat7epRvHHoooI0M0+io+jufX27W6yQqA/qEA0DaIZNAz9vndaGZfH7FDOqBruYQvhA2Anf/QVOXWWHIma2ApL/DiG9pnMDH1KHbN2Ikr7pme3jQEKJ4y2eNqj5H0LtT/2fh4RBNo6Lm2EimTY/gdgrSj6xQdz9C/i6b9FSgUFZoNKlKPwbjE5DiQgogfPVWAlfRq1I76Dq54t13almSXhCLRWbGQbHmftEEyGLDAW89vqL3oR10fIKyvcp7rz4sVLBNQdzHZz6tyAgm/fZcTU5IU//sRRCTjXkiMoyNmEgcFGg9oFLe2TP9PR/MvRNG7QXCy0uAfS8d1Jh4cU0ML/yiNilgqpsXGSCrRoKzxbZLrpytUFC+ObkO2GtOV8bUcf18UZGkZwY4pfhBvkv4bKilMHnyvqjjlNGtnY804RLzMGyMNJbAZWrOgW0qze/hLo8Wnor9dTVGosbPpgEtuH0uwoSnzL");
+                "Hvr79t0opVZ+47mDAVMzdMEvjGsy4v5+9j7MaMAXfS0POl9ocTN/7KIwomAtYUKO5qILJoyDH4zQ6ec9SIwi54uOjnqdXRl9WmrCa1O3Ck9GpiTIHrSsckYOLvfTaA/613Iuw2uhOdQ0y0SGjydCKOayD/rUGgdCA8BO6RFx09tCAsEmUAuF4SZa6sZII5VFlz8kdrcSTTX39jr7ZzdUBV9kuTtj9FKChE41LEJZREvTr40oOelh1oa9MXf1uRnDU0d/dm3/wQUHGr4WrL1d+GWfjPpDovxT2J3hU6OzU9fON6OxKO/PbwXBhgdhnecxEnuhTAdpJ/pS5r7QM24KTZZXaCzYiXx8fOD0w8BrtbfTiLiqHHsbv7fRyRweWIk4qvj5EhHKiXnACZufhqNrkrMGVBj6ah2cCAKSWSg2motvlBFrqriC");
+
+        //yu
+        runYun("route=6d1f56357d38d06d1e74d07b8131eb66; session_oa=MTY4MDY0YzAtMDQ1Ni00ZmRhLWE0M2MtMjkwOTI3OTkzNjI1; fid=39037; _uid=198260240; uf=94ffe74515793f36d488096901cdbd63c588ff1102babd2728a8c9197b6288cebbe0fa7ed8727a6dfb420d589f9a262cdc436c455fddffc288b83130e7eb470447967f06c3529f39c04fd8193a78cec6260b22ede7461b6bb5f77116b35a5778c05b7c8d1cb6d748aa2ebad65cd196bb; _d=1741408205903; UID=198260240; vc2=9E60DFC9876866478773F34169EF5C5A; vc3=Ao84Fo3tvJ6opoX8P9D%2Fe3MshZNRReFYWButKGruXVOMRzLdKnBSfJTphHAu7X%2FjpXs6oOAP8m9yVZL6SAVcUV81aoX%2FnFaHjRza%2F%2FvCiMYKc2nYj%2BKVWRIFGaLhD5HZW9v8KQpdbKOh8RVI9KBPQQGkKPgS9F1I1CCVXZiX6d0%3D8d2b6c95c468e52de5487bcfc85d1de7; cx_p_token=3e31c1813424323871d4471c17d2e43b; p_auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxOTgyNjAyNDAiLCJsb2dpblRpbWUiOjE3NDE0MDgyMDU5MDUsImV4cCI6MTc0MjAxMzAwNX0.stwDVWrQdHrpRCvidX9go1MTWBLOqPPxD5cXwIWEZjY; xxtenc=ac1e5c56730295afb91f7670aa4c2f91; DSSTASH_LOG=C_38-UN_3626-US_198260240-T_1741408205905; oa_deptid=39037; oa_uid=198260240; oa_name=%E4%BD%99%E5%BF%97%E5%8D%9A; oa_enc=5f2fe9353213a79a614d5332912e4822",
+                "0DfmIrPKO4xPWna4qwRFMavRt2U3XysYeuKBeMKrORMrwW/xN/Epp2UWBzCht6RqoO3PCvtcwT/kQmKkBkDBRYPobn8JngvtSzfw3BZZORoztzKOtIn/nsWbjux5fWU2bMeOuKt+v+Ko8h47HsEaGKnPIr/b7Hlx4E2uXDIEIGhMXV0plb5PSKnXuSSr9GnPr/g3fZwuJD1AAFDyExnuQENSBxBmoXgis2qJJXx9BICWPmMdDzC6GmJWp0goAYPdo24Xk64lUHWRhv6HPqfETL3e9PdlgDuksyUroDLqQ0y4e4g4YBHLfpbDC8n1xgQrNyb5D4Qh/mWOJH03AEw/H+8f5saOFJRXbuwpCLk8AMKtvfGbDOMcYYCEfEXV+Igo5b88Q3QQ0AjHFgGp2EE2vy4yYlhY1msvlsITfx/zNoZ+iiPKnktC6UqByE1vItwwDSrXzeC1acYpSPLNRyO47iYNP6FLbLhsoUPqrRlqHWxi7WEHoDwXK5fcIV/1y72yqtMqlhb/hUMDZInFnBYHUFYyLqigGJLMqKybnrD9A531BgliAw/ALXV0s/rx1HDhIxArL2f885mQ5MRMFCBe8L8hjRexSb5lpxTwGnN6NJjYA/EH0WpkwgbWYcNaxsS+cZMXyDNBWNmfmnz9ZYV9RNIJtZERjlpLAWT1Fja+Mly51syhjmlcRILfDWVqbGGPMywDHbs++uIYluu8hO1fHJ9o4SEf+b0FVfWxzO7u7l/SBYtJI9FKCFE1vXfwKMKHztpZW105B2A0aFOkiK2a1CZRQqMgtny81FQdZRpkcc+6RDe15+V809XFGCzabCBjyIPMC4RtPc1p1A/JcAvjF2uz/cE2AmtETIWap14yYe1XBdGZpeTKTcFNjM/2lFV/khlDYB4VGAGDvjsa8YtZS/nuOm5NThAlQllYPuSdPHyGVXaU40HCP4O/llorEQSM9uYwtAc/uCorb+P/gH7Ft2ohwJAuYC4pUpf7yhURWVi7QuPAsxMjFx0zOy2UYv7mANT2rL1qoonnwBPJipBR5EANBArh/OnvbJX3LOFR0EupB7XHbhwY2dqjHLn80Vz7kziaiemviGS82eBFTp73LSnVq0ce+nGqAKM40HO+UbElXJafKspjs7kavqEgGyVUYg3Xpfu2lyGfTn3dMEorXrnTrCidggDyiEARai8Qdx7Uo1DujLJbYNR5jdsQM18mpBx8TZHHSAJpUgTZt0XgeLqwmJ2L3ZeVvdMGgrhy3KhGUcBznN9/9t1bwdWTtGSV4S4VP7BraoavJk0d5Je86QFno4+I91JBXPDATHoGdy9WXfV5/Exj6rRSx+ZnQxcNqQe1x24cGNnaoxy5/NFc+0u5YvGrp7Ohu/HSB0Ooaf65+TMWpM420f3qrdvCP1FuibhQuhD4pYLIwo5ubVYh/NPF4Mlq4zoPpKHO4aD+NbV7F7Tggoy9tdQNmXRV4BaulKdNk/cFLsEKLOAyRMPwBlLy67mNAV/YWxb2X1MCWboFPozL1gHwEAZAqiLIEi1yLnht1pZNnBjaogEGn2KN7MiJedhcq+Fd2yShLOKifMDpn7MP5GZFf6+fbl2btVkOuupuMNOvwSC4yOzsL3c8Og==");
 
     }
 
@@ -132,12 +136,12 @@ public class TimeService {
         String checkCode = checkMono.block();
         System.out.println("checkCode值：" + checkCode);
         Mono<String> sendMono = myService.sendFormDataAndFormIdValueData(checkCode,User_Cookie,formIdValueData);
-        Mono<String> sendMono1 = myService.sendFormDataNoFormIdValueData(checkCode,User_Cookie);
+//        Mono<String> sendMono1 = myService.sendFormDataNoFormIdValueData(checkCode,User_Cookie);
 
         String result = sendMono.block();
-        String result1 = sendMono1.block();
+//        String result1 = sendMono1.block();
         System.out.println("加密formIdValueData值：" + result);
-        System.out.println("无加密值：" + result1);
+//        System.out.println("无加密值：" + result1);
 
     }
 

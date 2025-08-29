@@ -1,3 +1,6 @@
+<h3>8.29更新内容：</h3>
+MyService.java中的enc和uuid发送变化，请自行修改
+
 在 https://github.com/sh1SuTa/xueXiT/blob/ea3ebf0cfcf7fb6cefd0354144e86cf5f0555826/src/main/java/com/putileaf/xuexit/MyService.java
 中填写你的Cookie
 ![img1.png](img1.png)
@@ -25,6 +28,8 @@ package为jar包，在target目录下
 
 克隆仓库
 git clone https://github.com/sh1SuTa/xueXiT.git
+
+
 
 值得一提的是：
 ![img_5.png](img_5.png)
