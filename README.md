@@ -1,5 +1,7 @@
 <h3>8.29更新内容：</h3>
 MyService.java中的enc和uuid发送变化，请自行修改
+
+浏览器打开F12，自行使用该链接抓取加密的表单数据
 https://office.chaoxing.com/front/third/apps/forms/fore/apply?id=819284&enc=e841476e440b01fb736891518a4186d0&state=39037&fidEnc=b06cba4a51ac2253
 
 在 https://github.com/sh1SuTa/xueXiT/blob/ea3ebf0cfcf7fb6cefd0354144e86cf5f0555826/src/main/java/com/putileaf/xuexit/MyService.java
