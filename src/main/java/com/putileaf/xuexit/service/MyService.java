@@ -56,7 +56,8 @@ public class MyService {
 
         formData.add("enc", "e841476e440b01fb736891518a4186d0");
 
-        formData.add("uuid", "c5804a0df482456d8077942b87b098d7");//10.1修改
+//        formData.add("uuid", "c5804a0df482456d8077942b87b098d7");//10.1修改
+        formData.add("uuid", "c03b5d75ddf0475d8a9ff3b695fef7dc");//2026.2.28修改
 
         formData.add("checkCode", checkCode);
 
@@ -92,7 +93,7 @@ public class MyService {
 
         formData.add("checkCode", checkCode);
 
-        formData.add("submitVersion", "1744883382000");//相同
+        formData.add("submitVersion", "1759140144000");
 
 
         formData.add("stateFid", "39037");
